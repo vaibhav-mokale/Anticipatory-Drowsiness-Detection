@@ -1,0 +1,7 @@
+*.npz
+*.dat
+*venv
+.venv
+.tmp
+build
+dist

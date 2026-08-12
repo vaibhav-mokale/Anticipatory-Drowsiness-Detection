@@ -1,0 +1,9 @@
+opencv-python>=4.8,<5
+dlib
+numpy
+scipy
+imutils
+pygame
+Pillow
+matplotlib
+customtkinter

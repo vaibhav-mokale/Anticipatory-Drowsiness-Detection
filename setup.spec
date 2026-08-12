@@ -1,0 +1,58 @@
+# -*- mode: python ; coding: utf-8 -*-
+
+a = Analysis(
+    ['main.py'],
+    pathex=[],
+    binaries=[],
+    datas=[
+        ('shape_predictor_68_face_landmarks.dat', '.'),
+        ('alert.mp3', '.'),
+        ('icon.ico', '.'),
+        ('assets/figures/Training_Validation_Accuracy.png', 'assets/figures'),
+        ('assets/figures/Training_Loss.png', 'assets/figures'),
+        ('assets/figures/Confusion_Matrix.png', 'assets/figures'),
+        ('assets/figures/Precision_Recall_Curve.png', 'assets/figures'),
+    ],
+    hiddenimports=[
+        'app',
+        'app.gui',
+        'app.gui.window',
+        'app.idas_core',
+        'app.graphs',
+        'app.stats',
+        'app.camera',
+        'app.audio',
+        'app.config',
+        'app.resources',
+        'customtkinter',
+    ],
+    hookspath=[],
+    hooksconfig={},
+    runtime_hooks=[],
+    excludes=[],
+    noarchive=False,
+    optimize=0,
+)
+pyz = PYZ(a.pure)
+
+exe = EXE(
+    pyz,
+    a.scripts,
+    a.binaries,
+    a.datas,
+    [],
+    name='Road Hypnosis Detection',
+    debug=False,
+    bootloader_ignore_signals=False,
+    strip=False,
+    upx=True,
+    upx_exclude=[],
+    runtime_tmpdir=None,
+    console=False,
+    disable_windowed_traceback=False,
+    argv_emulation=False,
+    target_arch=None,
+    codesign_identity=None,
+    entitlements_file=None,
+    icon=['icon.ico'],
+)
