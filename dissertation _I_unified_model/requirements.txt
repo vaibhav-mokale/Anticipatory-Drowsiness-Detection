@@ -1,0 +1,13 @@
+# Runtime (CPU torch recommended)
+torch
+torchvision
+timm
+opencv-python>=4.8,<5
+numpy
+customtkinter
+Pillow
+pygame
+platformdirs
+
+# Packaging
+pyinstaller>=6.0

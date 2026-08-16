@@ -1,0 +1,10 @@
+CNN + BiLSTM + ViT Evaluation Results
+=============================================
+
+Accuracy    : 0.6628
+Precision   : 0.9682
+Recall      : 0.4823
+F1 Score    : 0.6439
+Specificity : 0.9728
+Sensitivity : 0.4823
+ROC AUC     : 0.8584

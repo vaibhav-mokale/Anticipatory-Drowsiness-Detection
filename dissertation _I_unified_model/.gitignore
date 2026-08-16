@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtualenvs
+.venv/
+venv/
+env/
+*venv/
+
+# Tooling / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# App runtime
+exports/
+*.log
+.tmp/
+.DS_Store
+
+# PyInstaller
+*.manifest
+*.spec.bak
+
+# Large / local-only data
+datasets/
+checkpoints/last.pth
+checkpoints/data_split.csv
+checkpoints/confusion_matrix.png
+checkpoints (2).zip
+
+# Archive reference (local only; nested git + large models)
+(archive) road-hypnosis-detection/
+
+# Notebook noise
+Results/*.png
+Results/predictions.csv
+Results/Training_*.png
+Results/Confusion*.png
+Results/Normalized*.png
+Results/Precision*.png
+Results/ROC*.png
